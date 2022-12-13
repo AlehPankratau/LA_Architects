@@ -303,7 +303,7 @@ main .about {
 }
 
 .feedback {
-  background-image: url(/img/Chair.png);
+  background-image: url(img/Chair.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
