@@ -1,0 +1,932 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  scroll-behavior: smooth;
+  font-family: Inter, sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.cookies {
+  color: white;
+  padding-top: 100px;
+  margin-left: 67px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+header {
+  position: relative;
+  background-color: rgb(32, 32, 32);
+}
+header .divan {
+  position: absolute;
+  background-image: url(/img/divan.png);
+  width: 750px;
+  height: 475px;
+  bottom: -160px;
+  right: 0px;
+}
+
+main .about {
+  background-color: rgb(42, 42, 42);
+}
+
+.header {
+  display: flex;
+  padding: 86px 65px;
+  align-items: center;
+}
+.header nav {
+  margin: 0 auto;
+}
+.header nav ul {
+  display: flex;
+  text-transform: uppercase;
+}
+.header nav ul li {
+  margin-right: 48px;
+}
+.header nav ul li a {
+  color: white;
+  line-height: 30px;
+}
+.header nav ul li a:hover {
+  border-bottom: 2px solid white;
+  padding-bottom: 4px;
+}
+
+.madeBy {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  z-index: 5;
+}
+.madeBy .made {
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 500;
+  z-index: 2;
+}
+.madeBy .laArch {
+  font-size: 65px;
+  font-weight: 500;
+  z-index: 2;
+}
+.madeBy .newPer {
+  color: #e2fe39;
+  font-size: 65px;
+  font-weight: 900;
+  text-align: end;
+  z-index: 2;
+}
+.madeBy .nestaR {
+  font-size: 65px;
+  font-weight: 500;
+  z-index: 2;
+}
+.madeBy .lest {
+  position: absolute;
+  bottom: -55px;
+  left: -45px;
+  z-index: 1;
+}
+.madeBy .lest2 {
+  position: absolute;
+  top: 59px;
+  right: -92px;
+  z-index: 1;
+}
+.madeBy img {
+  border-radius: 5px;
+}
+
+.contactUs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
+  z-index: 2;
+  padding-bottom: 323px;
+}
+.contactUs a {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 86px;
+}
+.contactUs a span {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 23px;
+}
+
+.about .cookies {
+  color: white;
+  padding-top: 150px;
+  margin-left: 67px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.about .mission {
+  color: white;
+  margin-top: 54px;
+  margin-left: 67px;
+}
+.about .mission h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.about .mission .boldH2 {
+  font-weight: 900;
+}
+.about .mission .colorH2 {
+  font-weight: 900;
+  color: #e2fe39;
+}
+.about .aboutCompany {
+  display: flex;
+  width: 100%;
+}
+.about .aboutCompany .logotype {
+  width: 30%;
+  margin-left: 196px;
+  margin-top: 110px;
+}
+.about .aboutCompany .aboutText {
+  width: 50%;
+  margin-top: 110px;
+}
+.about .aboutCompany .aboutText p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.about .contactUs {
+  padding-bottom: 100px;
+}
+
+.service {
+  background-color: rgb(32, 32, 32);
+  padding-bottom: 100px;
+}
+.service .cookies {
+  color: white;
+  padding-top: 100px;
+  margin-left: 67px;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+}
+.service .qualityD {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 67px;
+}
+.service .qualityD h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.service .qualityD .colorH2 {
+  font-weight: 900;
+  color: #e2fe39;
+}
+.service .accordion {
+  margin-left: 67px;
+  margin-right: 50px;
+}
+.service .accordion label {
+  display: flex;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  border-top: 2px solid white;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.service .accordion .accordion-toggle:checked ~ section {
+  height: auto;
+}
+.service .accordion .accordion-toggle:checked ~ label:after {
+  transform: rotate(45deg);
+  top: 16px;
+}
+.service .accordion .accordion-toggle {
+  display: none;
+}
+.service .accordion label:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  transform: rotate(-135deg);
+  transition: 0.4s transform;
+}
+.service .accordion section {
+  display: flex;
+  overflow: hidden;
+  height: 0;
+  transition: all 0.4s;
+}
+.service .accordion section .project {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.service .accordion section .aboutProject {
+  color: white;
+  width: 50%;
+}
+.service .accordion section .aboutProject p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.team {
+  background-color: rgb(42, 42, 42);
+}
+.team .we {
+  margin-top: 50px;
+  margin-left: 67px;
+  margin-right: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.team .we .worker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.team .we .worker img {
+  margin-bottom: 30px;
+}
+.team .we .worker .nameW {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+.team .we .worker .surW {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+}
+.team .we .worker .profW {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+
+.feedback {
+  background-image: url(/img/Chair.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.feedback .feedbackForm {
+  width: 50%;
+  color: black;
+  text-transform: uppercase;
+  padding-bottom: 250px;
+  padding-top: 91px;
+  padding-left: 67px;
+}
+.feedback .feedbackForm .feedA {
+  width: 100%;
+}
+.feedback .feedbackForm .feedA h2 {
+  font-size: 35px;
+  font-weight: 500;
+}
+.feedback .feedbackForm .feedA h2 span {
+  font-weight: 900;
+}
+.feedback .feedbackForm .feedA .feedText {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+.feedback .feedbackForm .formRow {
+  display: flex;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+.feedback .feedbackForm .formRow select {
+  padding-left: 10px;
+  width: 70%;
+  height: 40px;
+  border: 2px solid black;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+.feedback .feedbackForm .formRow .formInput {
+  width: 100%;
+}
+.feedback .feedbackForm .formRow .formInput input {
+  width: 100%;
+  height: 40px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(146, 146, 146);
+}
+.feedback .feedbackForm .formRow .formInput textarea {
+  width: 100%;
+  height: 10em;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgb(146, 146, 146);
+}
+.feedback .feedbackForm input[type=submit] {
+  display: flex;
+  background-color: rgb(42, 86, 241);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 4px 2px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.quote {
+  background-color: black;
+  padding: 80px;
+}
+.quote .container {
+  width: 100%;
+}
+.quote .quoteBK {
+  width: 100%;
+}
+.quote .quoteBK blockquote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quote .quoteBK blockquote p {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+}
+.quote .quoteBK blockquote p span {
+  font-weight: 700;
+  color: #e2fe39;
+}
+.quote .quoteBK blockquote p:nth-child(1) {
+  margin-left: -100px;
+}
+.quote .quoteBK blockquote p:nth-child(2) {
+  margin-left: 100px;
+}
+.quote .quoteBK blockquote p:nth-child(3) {
+  margin-left: -150px;
+}
+.quote .quoteBK blockquote p:nth-child(4) {
+  margin-left: 180px;
+}
+.quote .quoteBK blockquote p:nth-child(5) {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+.map {
+  background-color: rgb(32, 32, 32);
+}
+.map .cont {
+  display: flex;
+  padding-left: 67px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.map .cont map iframe {
+  width: 500px;
+  height: 100%;
+}
+.map .cont .adr {
+  margin-left: 100px;
+}
+.map .cont .adr h2 {
+  margin-bottom: 50px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+}
+.map .cont .adr h2 span {
+  font-weight: 800;
+}
+.map .cont .adr p {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+}
+.map .cont .adr p:nth-child(5) {
+  margin-top: 30px;
+}
+.map .cont .icons {
+  display: flex;
+  margin-top: 20px;
+}
+.map .cont .icons div {
+  filter: grayscale(50%);
+}
+.map .cont .icons div:hover {
+  filter: grayscale(0%);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+
+@media (max-width: 1439px) {
+  .container {
+    width: 100%;
+  }
+  .service .accordion section .project {
+    width: 70%;
+  }
+}
+@media (max-width: 1170px) {
+  header .divan img {
+    width: 70%;
+  }
+  .madeBy .made {
+    font-size: 17px;
+  }
+  .madeBy .laArch {
+    font-size: 45px;
+  }
+  .madeBy .newPer {
+    font-size: 45px;
+  }
+  .madeBy .nestaR {
+    font-size: 45px;
+  }
+  .aboutCompany img {
+    width: 70%;
+  }
+}
+@media (max-width: 1000px) {
+  .madeBy .made {
+    font-size: 14px;
+  }
+  .madeBy .laArch {
+    font-size: 35px;
+  }
+  .madeBy .newPer {
+    font-size: 35px;
+  }
+  .madeBy .nestaR {
+    font-size: 35px;
+  }
+  .madeBy .lest img {
+    width: 70%;
+  }
+  .madeBy .lest2 img {
+    width: 70%;
+  }
+  .contactUs a span {
+    font-size: 20px;
+  }
+  .contactUs img {
+    width: 20%;
+  }
+  .about .cookies {
+    font-size: 20px;
+  }
+  .about .mission h2 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+  .about .aboutCompany .logotype {
+    width: 30%;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  .about .aboutCompany .aboutText {
+    width: 50%;
+    margin-top: 50px;
+  }
+  .about .aboutCompany .aboutText p {
+    font-size: 16px;
+  }
+  .service .cookies {
+    font-size: 20px;
+  }
+  .service .qualityD h2 {
+    font-size: 28px;
+  }
+  .service .accordion {
+    margin-left: 67px;
+    margin-right: 50px;
+  }
+  .service .accordion section {
+    display: flex;
+    gap: 20px;
+  }
+  .service .accordion label {
+    font-size: 12px;
+  }
+  .service .accordion .project {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .service .accordion .project img {
+    width: 100%;
+  }
+  .service .accordion .aboutProject p {
+    font-size: 14px;
+  }
+  .team .cookies {
+    font-size: 20px;
+  }
+  .team .we {
+    gap: 10px;
+  }
+  .team .we .worker {
+    width: 50%;
+  }
+  .team .we .worker img {
+    width: 100%;
+  }
+  .team .we .worker .nameW {
+    font-size: 18px;
+  }
+  .team .we .worker .surW {
+    font-size: 18px;
+  }
+  .team .we .worker .profW {
+    font-size: 18px;
+  }
+  .feedback .feedbackForm {
+    width: 90%;
+  }
+  .quote .quoteBK blockquote p {
+    font-size: 20px;
+  }
+  .quote .quoteBK blockquote p:nth-child(5) {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  .map .cookies {
+    font-size: 20px;
+  }
+  .map .cont {
+    margin-right: 67px;
+    justify-content: space-between;
+  }
+  .map .cont map iframe {
+    width: 350px;
+  }
+  .map .cont .adr h2 {
+    font-size: 30px;
+  }
+  .map .cont .adr p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  header .divan {
+    width: 70%;
+  }
+  header .divan img {
+    width: 100%;
+  }
+  .header nav {
+    margin: 0 auto;
+  }
+  .header nav ul li {
+    margin-right: 10px;
+  }
+  .header nav ul li:first-child {
+    margin-left: 10px;
+  }
+  .header nav ul li a {
+    font-size: 12px;
+  }
+  .madeBy .lest2 {
+    position: absolute;
+    top: 59px;
+    right: -80px;
+    z-index: 1;
+  }
+  .service .cookies {
+    font-size: 20px;
+  }
+  .service .qualityD h2 {
+    font-size: 28px;
+  }
+  .service .accordion {
+    margin-left: 67px;
+    margin-right: 50px;
+  }
+  .service .accordion section {
+    display: flex;
+    gap: 10px;
+  }
+  .service .accordion label {
+    font-size: 12px;
+  }
+  .service .accordion .project {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .service .accordion .project img {
+    width: 100%;
+  }
+  .service .accordion .aboutProject p {
+    font-size: 10px;
+  }
+  .map .cont {
+    flex-direction: column;
+    padding-left: 67px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  .map .cont map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+  }
+  .map .cont .adr {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+  .map .cont .adr h2 {
+    display: none;
+  }
+  .map .cont .adr p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .feedback .feedbackForm {
+    padding-bottom: 100px;
+    padding-top: 30px;
+    padding-left: 67px;
+  }
+  .feedback .feedbackForm .feedA h2 {
+    font-size: 20px;
+  }
+  .feedback .feedbackForm .feedA .feedText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 580px) {
+  .container {
+    padding: 0 30px;
+  }
+  .container .cookies {
+    margin: 0;
+  }
+  .container .mission {
+    margin: 0;
+    margin-top: 30px;
+  }
+  .container .aboutCompany {
+    margin-top: 50px;
+    justify-content: space-between;
+  }
+  .container .aboutCompany .logotype {
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .container .aboutCompany .aboutText {
+    margin: 0;
+    width: 60%;
+  }
+  .container .contactUs {
+    padding-bottom: 40px;
+  }
+  .container .contactUs a {
+    margin-top: 30px;
+  }
+  .container .cookies {
+    padding-top: 40px;
+  }
+  .container .qualityD {
+    margin: 30px 0;
+  }
+  .container .feedbackForm {
+    width: 100%;
+    padding: 30px 0;
+  }
+  .container .cont {
+    margin: 0;
+    padding: 0;
+  }
+  .container .cont map {
+    margin-top: 20px;
+  }
+  .container .cont .adr p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .container .cont .adr p:nth-child(5) {
+    margin-top: 15px;
+  }
+  .container .cont .adr .icons {
+    margin-top: 10px;
+  }
+  .map {
+    padding-bottom: 30px;
+  }
+  .header {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .header ul {
+    gap: 30px;
+  }
+  .header ul li {
+    margin: 0 !important;
+  }
+  .madeBy .lest,
+.madeBy .lest2 {
+    display: none;
+  }
+  .team .we {
+    flex-direction: column;
+    align-items: center;
+  }
+  .quote .quoteBK blockquote p {
+    width: 100%;
+    font-size: 18px;
+    margin: 0 !important;
+  }
+  .quote .quoteBK blockquote p:nth-child(5) {
+    font-size: 12px;
+    margin-left: 120px !important;
+    margin-top: 50px !important;
+  }
+  .service .accordion {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .service .accordion label {
+    padding: 0;
+  }
+  .service .accordion label:after {
+    right: 0;
+  }
+  .service .accordion section {
+    display: flex;
+    flex-direction: column;
+  }
+  .service .accordion section .project {
+    width: 100%;
+  }
+  .service .accordion section .aboutProject {
+    width: 100%;
+  }
+  .service .accordion section .aboutProject p {
+    margin-bottom: 14px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .container .header nav ul {
+    gap: 15px;
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    padding: 0 20px;
+  }
+  .feedback .container .feedbackForm {
+    padding-left: 0;
+  }
+  .contactUs {
+    width: 100%;
+  }
+  .madeBy {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .madeBy .made {
+    font-size: 16px !important;
+  }
+  .madeBy p {
+    font-size: 24px !important;
+  }
+  .header ul {
+    gap: 15px;
+  }
+  .about .container .cookies {
+    padding-top: 200px;
+    font-size: 18px;
+  }
+  .about .container .mission h2 {
+    font-size: 16px;
+  }
+  .about .container .aboutCompany {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .container .aboutCompany .logotype {
+    margin-bottom: 15px;
+  }
+  .about .container .aboutCompany .aboutText {
+    width: 100%;
+  }
+  .feedback {
+    background: white;
+  }
+  .feedback .feedbackForm {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 67px;
+  }
+  .feedback .feedbackForm .feedA h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .feedback .feedbackForm .feedA .feedText {
+    font-size: 18px;
+  }
+  .feedback .feedbackForm input[type=submit] {
+    padding: 10px 28px;
+  }
+  .service .container .cookies {
+    font-size: 18px;
+  }
+  .quote {
+    padding: 30px;
+  }
+  .quote .quoteBK blockquote p:nth-child(5) {
+    padding: 0;
+    margin: 30px 0 0 0 !important;
+    text-align: right;
+  }
+}
+@media (max-width: 350px) {
+  .header {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+  }
+  .header ul {
+    gap: 5px;
+  }
+  .header ul li {
+    margin: 0 !important;
+  }
+  .team .we {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 370px) {
+  header .container {
+    padding: 0 10px;
+  }
+  header .container .header nav ul {
+    gap: 7px;
+  }
+}/*# sourceMappingURL=style.css.map */
